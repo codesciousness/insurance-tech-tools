@@ -1,0 +1,118 @@
+:root {
+    --blue: #2b68f6; /* rgb(43, 104, 246) */
+    --bluish-purple: #4b55e7; /* rgb(75, 85, 231) */
+    --vibrant-purple: #6a1bd0; /* rgb(106, 27, 208) */
+    --green: #00bfa6; /* rgb(0, 191, 166) */
+    --yellow: #ffd505; /* rgb(255, 213, 5) */
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    
+}
+
+.header {
+    height: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
+    url(../images/Abstract_Background_02-05.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.header__nav {
+    margin: 2rem 3rem;
+    float: right;
+}
+
+.header__a {
+    color: white;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.header__button {
+    color: var(--vibrant-purple);
+    background-color: var(--yellow);
+    margin-right: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.header__nav > .header__button {
+    margin-left: 2rem;
+}
+
+.header__div {
+    margin: 3rem;
+    width: 35%;
+}
+
+.header__h1 {
+    color: var(--yellow);
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+}
+
+.header__span {
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: block;
+}
+
+.header__p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.header__div > .header__button {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.header__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45%;
+    margin: 3rem;
+}
+
+.services {
+    height: 75vh;
+    background: url(../images/double-bubble-outline.png);
+}
+
+.about {
+    height: 50vh;
+    background: url(../images/Abstract_Background-05.jpg);
+}
+
+.solutions {
+    height: 75vh;
+    background: url(../images/gradient-honeycomb.png);
+}
+
+.contact {
+    height: 50vh;
+    background: url(../images/Abstract_Background-05.jpg);
+}
+
+.faqs {
+    height: 75vh;
+    background: url(../images/double-bubble-outline.png);
+}
+
+.footer {
+    height: 50vh;
+    background: var(--bluish-purple);
+}
