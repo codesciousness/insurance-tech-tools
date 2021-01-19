@@ -1,0 +1,22 @@
+@import "helpers/variables";
+@import "helpers/placeholders";
+@import "helpers/mixins";
+@import "layout/header";
+@import "layout/services";
+@import "layout/about";
+@import "layout/solutions";
+@import "layout/contact";
+@import "layout/faqs";
+@import "layout/footer";
+@import "components/forms";
+@import "components/buttons";
+
+/* Universal Styles */
+
+* {
+  @extend %normalize;
+}
+  
+html {
+  font-size: $main-font-size;
+}

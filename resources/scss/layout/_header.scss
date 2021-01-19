@@ -1,0 +1,80 @@
+.header {
+    height: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
+    url(../images/Abstract_Background_02-05.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    font-family: $main-font;
+
+    &__nav {
+        margin: 2rem 3rem;
+        float: right;
+    }
+
+    &__a {
+        color: white;
+        margin: 1rem;
+        cursor: pointer;
+    }
+
+    &__button {
+        color: $secondary-bg-color-1;
+        background-color: $main-color;
+        margin-right: 2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    &__nav > .header__button {
+        margin-left: 2rem;
+    }
+
+    &__div {
+        position: absolute;
+        top: 50%;
+        width: 35%;
+        margin: 1rem 3rem;
+        transform: translateY(-50%);
+    }
+
+    &__h1 {
+        color: $main-color;
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin: 0.5rem 0;
+    }
+
+    &__span {
+        color: white;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    &__p {
+        color: white;
+        font-size: 1.25rem;
+        margin: 0.5rem 0;
+    }
+
+    &__p:last-child {
+        font-size: 0.75rem;
+    }
+
+    &__div > .header__button {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 45%;
+        margin: 3rem;
+    }
+}

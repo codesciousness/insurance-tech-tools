@@ -1,118 +1,131 @@
-:root {
-    --blue: #2b68f6; /* rgb(43, 104, 246) */
-    --bluish-purple: #4b55e7; /* rgb(75, 85, 231) */
-    --vibrant-purple: #6a1bd0; /* rgb(106, 27, 208) */
-    --green: #00bfa6; /* rgb(0, 191, 166) */
-    --yellow: #ffd505; /* rgb(255, 213, 5) */
-}
-
+/* Colors */
+/* rgb(75, 85, 231) */
+/* rgb(106, 27, 208) */
+/* rgb(255, 213, 5) */
+/* rgb(0, 191, 166) */
+/* Font Properties */
+/* Borders */
+/* Box Shadow */
+/* Transitions */
 * {
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
-
-body {
-    
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 
 .header {
-    height: 75vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-    linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
-    url(../images/Abstract_Background_02-05.jpg) no-repeat;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
+  height: 75vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(transparent)), url(../images/Abstract_Background_02-05.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent), url(../images/Abstract_Background_02-05.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  font-family: Lato, sans-serif;
 }
 
 .header__nav {
-    margin: 2rem 3rem;
-    float: right;
+  margin: 2rem 3rem;
+  float: right;
 }
 
 .header__a {
-    color: white;
-    margin: 1rem;
-    cursor: pointer;
+  color: white;
+  margin: 1rem;
+  cursor: pointer;
 }
 
 .header__button {
-    color: var(--vibrant-purple);
-    background-color: var(--yellow);
-    margin-right: 2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    cursor: pointer;
+  color: #6a1bd0;
+  background-color: #ffd505;
+  margin-right: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 .header__nav > .header__button {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .header__div {
-    margin: 3rem;
-    width: 35%;
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  margin: 1rem 3rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .header__h1 {
-    color: var(--yellow);
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin: 0.5rem 0;
+  color: #ffd505;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
 }
 
 .header__span {
-    color: white;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    display: block;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  display: block;
 }
 
 .header__p {
-    color: white;
-    font-size: 1.5rem;
+  color: white;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.header__p:last-child {
+  font-size: 0.75rem;
 }
 
 .header__div > .header__button {
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1.5rem;
 }
 
 .header__img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 45%;
-    margin: 3rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45%;
+  margin: 3rem;
 }
 
 .services {
-    height: 75vh;
-    background: url(../images/double-bubble-outline.png);
+  height: 75vh;
+  background: url(../images/double-bubble-outline.png);
 }
 
 .about {
-    height: 50vh;
-    background: url(../images/Abstract_Background-05.jpg);
+  height: 50vh;
+  background: url(../images/Abstract_Background-05.jpg);
 }
 
 .solutions {
-    height: 75vh;
-    background: url(../images/gradient-honeycomb.png);
+  height: 75vh;
+  background: url(../images/gradient-honeycomb.png);
 }
 
 .contact {
-    height: 50vh;
-    background: url(../images/Abstract_Background-05.jpg);
+  height: 50vh;
+  background: url(../images/Abstract_Background-05.jpg);
 }
 
 .faqs {
-    height: 75vh;
-    background: url(../images/double-bubble-outline.png);
+  height: 75vh;
+  background: url(../images/double-bubble-outline.png);
 }
 
 .footer {
-    height: 50vh;
-    background: var(--bluish-purple);
+  height: 50vh;
+  background: #4b55e7;
 }
+
+/* Universal Styles */
+html {
+  font-size: 2.15vmin;
+}
+/*# sourceMappingURL=style.css.map */
