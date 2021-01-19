@@ -1,0 +1,129 @@
+.plans {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top, rgb(193, 181, 239), rgb(229, 226, 233), transparent),
+    url(../images/double-bubble-outline.png);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 2rem;
+
+    &__div {
+        width: 40%;
+        margin: 6rem 0 4rem 0;
+    }
+
+    &__h2 {
+        color: $secondary-color-1;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 0.75rem 0 1rem 0;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -6%;
+            background-color: black;
+            height: 2px;
+            width: 12%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__span {
+        color: black;
+        font-size: 1rem;
+        text-transform: uppercase;
+        display: block;
+
+        &.-rates {
+            color: gray;
+            font-size: 0.875rem;
+            text-transform: lowercase;
+        }
+    }
+
+    &__p {
+        color: black;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        line-height: 1.5;
+
+        &.-price {
+           font-size: 1.5rem; 
+        }
+    }
+
+    &__container {
+        @extend %flex-center;
+        flex-wrap: wrap;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 200px;
+        height: 300px;
+        margin: 0.3rem;
+        padding: 2rem;
+        background-color: whitesmoke;
+        box-shadow: $main-box-shadow;
+        opacity: 0.8;
+    }
+
+    &__hexagon {
+        width: 50px;
+        height: 28.8675px;
+        background: black;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -14.43375px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 14.43375px solid black;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -14.43375px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-top: 14.43375px solid black;
+        }
+    }
+
+    &__i {
+        color: whitesmoke;
+        margin: 0.25rem;
+    }
+
+    &__h3 {
+        color: $secondary-color-1;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin: 0.75rem 0 0.5rem 0;
+    }
+
+    &__button {
+        color: whitesmoke;
+        background-color: black;
+        padding: 0.5rem 1.5rem;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+}

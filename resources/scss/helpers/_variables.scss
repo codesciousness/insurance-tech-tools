@@ -1,14 +1,15 @@
 /* Colors */
 
 $main-bg-color: #4b55e7; /* rgb(75, 85, 231) */
-$secondary-bg-color-1: #6a1bd0; /* rgb(106, 27, 208) */
+$secondary-bg-color-1: #e5e2e9; /* rgb(229, 226, 233) */
 $main-color: #ffd505; /* rgb(255, 213, 5) */
-$secondary-color-1: #00bfa6; /* rgb(0, 191, 166) */
+$secondary-color-1: #6a1bd0; /* rgb(106, 27, 208) */
+$secondary-color-2: #00bfa6; /* rgb(0, 191, 166) */
 
 /* Font Properties */
 
-$main-font: Lato, sans-serif;
-//$secondary-font-1: ;
+$main-font: 'Lato', sans-serif;
+$secondary-font-1: Arial, sans-serif;
 $main-font-size: 2.15vmin;
 
 /* Borders */
@@ -19,7 +20,7 @@ $border-radius-sm: 5px;
 
 /* Box Shadow */
 
-$main-box-shadow: 2px 2px 5px darkslategrey;
+$main-box-shadow: 2px 2px 5px gray;
 $secondary-box-shadow-1: 5px 5px 20px black;
 
 /* Transitions */

@@ -6,7 +6,6 @@
     background-size: cover;
     position: relative;
     overflow: hidden;
-    font-family: $main-font;
 
     &__nav {
         margin: 2rem 3rem;
@@ -14,13 +13,14 @@
     }
 
     &__a {
-        color: white;
+        color: whitesmoke;
         margin: 1rem;
         cursor: pointer;
     }
 
     &__button {
-        color: $secondary-bg-color-1;
+        font-size: 1rem;
+        color: $secondary-color-1;
         background-color: $main-color;
         margin-right: 2rem;
         padding: 0.5rem 1rem;
@@ -48,26 +48,30 @@
     }
 
     &__span {
-        color: white;
+        color: whitesmoke;
         font-size: 1.5rem;
         text-transform: uppercase;
         display: block;
     }
 
     &__p {
-        color: white;
+        color: whitesmoke;
         font-size: 1.25rem;
         margin: 0.5rem 0;
     }
 
     &__p:last-child {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 
     &__div > .header__button {
-        margin-top: 2rem;
-        margin-bottom: 0.5rem;
+        margin: 2rem 0 0.5rem 0;
         padding: 0.75rem 1.5rem;
+    }
+
+    &__i {
+        color: whitesmoke;
+        margin: 0 0.5rem;
     }
 
     &__img {

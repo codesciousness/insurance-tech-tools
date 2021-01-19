@@ -2,9 +2,9 @@
 @import "helpers/placeholders";
 @import "helpers/mixins";
 @import "layout/header";
-@import "layout/services";
+@import "layout/plans";
 @import "layout/about";
-@import "layout/solutions";
+@import "layout/services";
 @import "layout/contact";
 @import "layout/faqs";
 @import "layout/footer";
@@ -18,5 +18,6 @@
 }
   
 html {
-  font-size: $main-font-size;
+  font-size: 16px;
+  font-family: $main-font;
 }
