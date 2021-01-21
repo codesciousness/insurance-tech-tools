@@ -24,5 +24,5 @@ $secondary-box-shadow-1: 1px 1px 3px $secondary-bg-color-1;
 
 /* Transitions */
 
-$button-transitions: all 0.2s ease-in 0.1s;
-$nav-transitions: all 0.75s ease-in-out 0.1s;
+$link-transitions: all 0.3s ease-in;
+$questionBox-transitions: color 0.25s ease-in 0.1s, background-color 0.25s linear 0.1s;

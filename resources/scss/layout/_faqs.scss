@@ -39,8 +39,17 @@
         &:nth-child(3) {
             color: whitesmoke;
             font-weight: bold;
-            text-decoration: underline;
             margin-top: 2rem;
+        }
+    }
+
+    &__a {
+        color: whitesmoke;
+        cursor: pointer;
+        transition: $link-transitions;
+
+        &:hover {
+            color: $main-color;
         }
     }
 
@@ -61,6 +70,12 @@
         box-shadow: $secondary-box-shadow-1;
         margin: 0.5rem 0;
         padding: 1rem 1.5rem;
+        transition: $questionBox-transitions;
+        cursor: pointer;
+
+        &:hover .faqs__question:not(.faqs__question.-active), &:hover .faqs__i.fa-plus {
+            color: $main-color;
+        }
 
         &.-active {
             background-color: $secondary-bg-color-1;
@@ -82,6 +97,7 @@
 
     &__question {
         color: whitesmoke;
+        transition: $questionBox-transitions;
 
         &.-active {
             color: $secondary-color-1;

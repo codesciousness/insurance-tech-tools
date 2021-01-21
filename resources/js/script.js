@@ -1,23 +1,30 @@
-const plusButtons = document.getElementsByClassName('fa-plus');
-const minusButtons = document.getElementsByClassName('fa-minus');
+const boxes = document.querySelectorAll('.faqs__box');
+const questionCircles = document.querySelectorAll('.fa-question-circle');
+const questions = document.querySelectorAll('.faqs__question');
+const answers = document.querySelectorAll('.faqs__answer');
+const plusButtons = document.querySelectorAll('.fa-plus');
+const minusButtons = document.querySelectorAll('.fa-minus');
 
-function activateQuestion(element) {
-    const parent = this.parentElement;
-    parent.className += ' -active';
-    const siblings = [...parent.children].filter(el => el.nodeType === 1 && el !== element);
-    siblings.forEach(sibling => sibling.className += ' -active');
-    const contentChildren = [...siblings[1].children];
-    contentChildren.forEach(child => child.className += ' -active');
+const removeActive = array => {
+    array.forEach(el => el.className = el.className.replace(' -active', ''));
 }
 
-function deactivateQuestion(element) {
-    let parent = this.parentElement;
-    parent.className = parent.className.replace(' -active', '');
-    let siblings = [...parent.children].filter(el => el.nodeType === 1 && el !== element);
-    siblings.forEach(sibling => sibling.className = sibling.className.replace(' -active', ''));
-    const contentChildren = [...siblings[1].children];
-    contentChildren.forEach(child => child.className = child.className.replace(' -active', ''));
+const deactivate = () => {
+    [boxes, questionCircles, questions, answers, plusButtons, minusButtons].forEach(removeActive);
 }
 
-[...plusButtons].forEach(element => element.addEventListener('click', activateQuestion));
-[...minusButtons].forEach(element => element.addEventListener('click', deactivateQuestion));
+function activate() {
+    if (this.className.includes(' -active')) {
+        deactivate();
+    }
+    else {
+        deactivate();
+        this.className += ' -active';
+        const directChildren = [...this.children];
+        directChildren.forEach(child => child.className += ' -active');
+        const contentChildren = [...directChildren[1].children];
+        contentChildren.forEach(child => child.className += ' -active');
+    }
+}
+
+boxes.forEach(el => el.addEventListener('click', activate));
