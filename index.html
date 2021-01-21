@@ -13,12 +13,12 @@
 <body>
     <header class="header">
         <nav class="header__nav">
-            <a class="header__a">Home</a>
-            <a class="header__a">About</a>
-            <a class="header__a">Plans & Pricing</a>
-            <a class="header__a">Services</a>
-            <a class="header__a">Contact</a>
-            <a class="header__a">FAQ</a>
+            <a class="header__a" href="index.html">Home</a>
+            <a class="header__a" href="#about">About</a>
+            <a class="header__a" href="#plans">Plans & Pricing</a>
+            <a class="header__a" href="#services">Services</a>
+            <a class="header__a" href="#contact">Contact</a>
+            <a class="header__a" href="#faqs">FAQ</a>
             <button class="header__button">Get Started Now</button>
         </nav>
         <div class="header__div">
@@ -31,7 +31,7 @@
     </header>
     <main>
         
-        <section class="plans">
+        <section id="plans" class="plans">
             <div class="plans__div">
                 <h2 class="plans__h2"><span class="plans__span">Explore</span>Our Plans</h2>
                 <p class="plans__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -67,22 +67,119 @@
                 </div>
             </div>
         </section>
-        <section class="services">
-            <img class="footer__img" src="resources/images/undraw_project_completed_w0oq.svg" alt="">
+        <section id="services" class="services">
+            <img class="services__img" src="resources/images/undraw_data_processing_yrrv.svg" alt="">
         </section>
-        <section class="about">
-            <img class="about__img" src="resources/images/undraw_Spreadsheet_re_cn18.svg" alt="">
-            <img class="about__img" src="resources/images/undraw_data_processing_yrrv.svg" alt="">
+        <section id="about" class="about">
+            <img class="about__img" src="resources/images/blush-cityscapes-downtown.svg" alt="">
+            <div class="about__div">
+                <h2 class="about__h2">Who We Are?</h2>
+                <p class="about__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="about__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Arcu cursus vitae congue mauris rhoncus aenean. Viverra orci sagittis eu volutpat odio facilisis. Vel turpis nunc eget lorem dolor. 
+                    Adipiscing at in tellus integer feugiat.</p>
+                <button class="about__button">Learn More</button>
+            </div>
         </section>
-        <section class="faqs">
-            <img class="contact__img" src="resources/images/drawkit-people-working-scene-2.svg" alt="">
+        <section id="faqs" class="faqs">
+            <div class="faqs__div">
+                <h2 class="faqs__h2">Got A Question?<span class="faqs__span">We have the answer!</span></h2>
+                <p class="faqs__p">These are some commonly asked questions by our users.</p>
+                <p class="faqs__p">Need more help?</p>
+                <img class="faqs__img" src="resources/images/drawkit-people-working-scene-2.svg" alt="">
+            </div>
+            <div class="faqs__questions">
+                <div class="faqs__box">
+                    <i class="faqs__i far fa-question-circle"></i>
+                    <div class="faq__content">
+                        <p class="faqs__question">Arcu cursus vitae congue mauris rhoncus aenean?</p>
+                        <p class="faqs__answer">Viverra orci sagittis eu volutpat odio facilisis. Vel turpis nunc eget lorem dolor. Adipiscing at in tellus integer feugiat. 
+                            Tincidunt dui ut ornare lectus sit amet est placerat in. Bibendum enim facilisis gravida neque convallis a. 
+                            Pretium quam vulputate dignissim suspendisse in.
+                        </p>
+                    </div>
+                    <i class="faqs__i fas fa-plus"></i>
+                    <i class="faqs__i fas fa-minus"></i>
+                </div>
+                <div class="faqs__box">
+                    <i class="faqs__i far fa-question-circle"></i>
+                    <div class="faq__content">
+                        <p class="faqs__question">Arcu cursus vitae congue mauris rhoncus aenean?</p>
+                        <p class="faqs__answer">Viverra orci sagittis eu volutpat odio facilisis. Vel turpis nunc eget lorem dolor. Adipiscing at in tellus integer feugiat. 
+                            Tincidunt dui ut ornare lectus sit amet est placerat in. Bibendum enim facilisis gravida neque convallis a. 
+                            Pretium quam vulputate dignissim suspendisse in.
+                        </p>
+                    </div>
+                    <i class="faqs__i fas fa-plus"></i>
+                    <i class="faqs__i fas fa-minus"></i>
+                </div>
+                <div class="faqs__box">
+                    <i class="faqs__i far fa-question-circle"></i>
+                    <div class="faq__content">
+                        <p class="faqs__question">Arcu cursus vitae congue mauris rhoncus aenean?</p>
+                        <p class="faqs__answer">Viverra orci sagittis eu volutpat odio facilisis. Vel turpis nunc eget lorem dolor. Adipiscing at in tellus integer feugiat. 
+                            Tincidunt dui ut ornare lectus sit amet est placerat in. Bibendum enim facilisis gravida neque convallis a. 
+                            Pretium quam vulputate dignissim suspendisse in.
+                        </p>
+                    </div>
+                    <i class="faqs__i fas fa-plus"></i>
+                    <i class="faqs__i fas fa-minus"></i>
+                </div>
+                <div class="faqs__box">
+                    <i class="faqs__i far fa-question-circle"></i>
+                    <div class="faq__content">
+                        <p class="faqs__question">Arcu cursus vitae congue mauris rhoncus aenean?</p>
+                        <p class="faqs__answer">Viverra orci sagittis eu volutpat odio facilisis. Vel turpis nunc eget lorem dolor. Adipiscing at in tellus integer feugiat. 
+                            Tincidunt dui ut ornare lectus sit amet est placerat in. Bibendum enim facilisis gravida neque convallis a. 
+                            Pretium quam vulputate dignissim suspendisse in.
+                        </p>
+                    </div>
+                    <i class="faqs__i fas fa-plus"></i>
+                    <i class="faqs__i fas fa-minus"></i>
+                </div>
+                <div class="faqs__box">
+                    <i class="faqs__i far fa-question-circle"></i>
+                    <div class="faq__content">
+                        <p class="faqs__question">Arcu cursus vitae congue mauris rhoncus aenean?</p>
+                        <p class="faqs__answer">Viverra orci sagittis eu volutpat odio facilisis. Vel turpis nunc eget lorem dolor. Adipiscing at in tellus integer feugiat. 
+                            Tincidunt dui ut ornare lectus sit amet est placerat in. Bibendum enim facilisis gravida neque convallis a. 
+                            Pretium quam vulputate dignissim suspendisse in.
+                        </p>
+                    </div>
+                    <i class="faqs__i fas fa-plus"></i>
+                    <i class="faqs__i fas fa-minus"></i>
+                </div>
+                <div class="faqs__box">
+                    <i class="faqs__i far fa-question-circle"></i>
+                    <div class="faq__content">
+                        <p class="faqs__question">Arcu cursus vitae congue mauris rhoncus aenean?</p>
+                        <p class="faqs__answer">Viverra orci sagittis eu volutpat odio facilisis. Vel turpis nunc eget lorem dolor. Adipiscing at in tellus integer feugiat. 
+                            Tincidunt dui ut ornare lectus sit amet est placerat in. Bibendum enim facilisis gravida neque convallis a. 
+                            Pretium quam vulputate dignissim suspendisse in.
+                        </p>
+                    </div>
+                    <i class="faqs__i fas fa-plus"></i>
+                    <i class="faqs__i fas fa-minus"></i>
+                </div>
+            </div>
         </section>
-        <section class="contact">
-            <img class="faqs__img" src="resources/images/Information carousel_Monochromatic.svg" alt="">
+        <section id="contact" class="contact">
+            <img class="contact__img" src="resources/images/Information carousel_Monochromatic.svg" alt="">
+            <div class="contact__div">
+                <h2 class="contact__h2">Get In Touch</h2>
+                <p class="contact__p">Lorem ipsum dolor consectetur adipiscing elit.</p>
+                <form class="contact__form" method="post" action="">
+                    <input class="contact__input" type="text" id="name" name="name" placeholder="Name" pattern="[A-Za-z]" aria-label="Enter your name" required>
+                    <input class="contact__input" type="email" id="email" name="email" placeholder="Email" aria-label="Enter your email address" required>
+                    <textarea class="contact__textarea" id="message" name="message" rows="5" maxlength="250" placeholder="Message" aria-label="Enter your message" required></textarea>
+                    <input class="contact__button" type="submit" value="SUBMIT" role="button" aria-label="Submit">
+                </form>
+            </div>
         </section>
     </main>
     <footer class="footer">
         <img class="footer__img" src="resources/images/undraw_lightbulb_moment_evxr.svg" alt="">
+        <img class="footer__img" src="resources/images/undraw_project_completed_w0oq.svg" alt="">
     </footer>
 </body>
 </html>

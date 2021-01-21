@@ -1,4 +1,11 @@
 .services {
+    display: flex;
+    justify-content: flex-end;
     background: url(../images/Abstract_Background-05.jpg) no-repeat;
     background-size: cover;
+    padding: 3rem;
+
+    &__img {
+        width: 25%;
+    }
 }

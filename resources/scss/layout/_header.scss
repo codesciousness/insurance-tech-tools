@@ -1,7 +1,6 @@
 .header {
     height: 75vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-    linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
     url(../images/Abstract_Background_02-05.jpg) no-repeat;
     background-size: cover;
     position: relative;
@@ -15,6 +14,7 @@
     &__a {
         color: whitesmoke;
         margin: 1rem;
+        text-decoration: none;
         cursor: pointer;
     }
 

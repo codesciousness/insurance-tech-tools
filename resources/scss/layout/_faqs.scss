@@ -1,4 +1,121 @@
 .faqs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background: url(../images/Abstract_Background-05.jpg) no-repeat;
     background-size: cover;
+    padding: 2rem;
+
+    &__div {
+        width: 40%;
+    }
+
+    &__h2 {
+        color: $main-color;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 0.5rem 0;
+
+        &::before {
+            content: 'FREQUENTLY ASKED QUESTIONS';
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__span {
+        color: whitesmoke;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    &__p {
+        color: $main-color;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+
+        &:nth-child(3) {
+            color: whitesmoke;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 2rem;
+        }
+    }
+
+    &__img {
+        margin-top: 2rem;
+        width: 75%;
+    }
+
+    &__questions {
+        width: 40%;
+    }
+
+    &__box {
+        display: flex;
+        position: relative;
+        background-color: #426ffa;
+        border-radius: $border-radius-sm;
+        box-shadow: $secondary-box-shadow-1;
+        margin: 0.5rem 0;
+        padding: 1rem 1.5rem;
+
+        &.-active {
+            background-color: $secondary-bg-color-1;
+            border-left: 4px solid $secondary-color-1;
+        }
+    }
+
+    &__i {
+        margin: 0 1rem;
+    }
+
+    &__i:first-child {
+        color: $main-color;
+
+        &.-active {
+            color: $secondary-color-1;
+        }
+    }
+
+    &__question {
+        color: whitesmoke;
+
+        &.-active {
+            color: $secondary-color-1;
+        }
+    }
+
+    &__answer {
+        margin-top: 1rem;
+        display: none;
+
+        &.-active {
+            display: block; 
+        }
+    }
+
+    &__i.fa-plus {
+        position: absolute;
+        right: 1rem;
+        color: whitesmoke;
+        display: block;
+
+        &.-active {
+            display: none;
+        }
+    }
+
+    &__i.fa-minus {
+        position: absolute;
+        right: 1rem;
+        color: black;
+        display: none;
+
+        &.-active {
+            display: block;
+        }
+    }
 }

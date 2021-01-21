@@ -3,11 +3,10 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to top, rgb(193, 181, 239), rgb(229, 226, 233), transparent),
+    background: linear-gradient(to top, rgb(193, 181, 239), $secondary-bg-color-1, transparent),
     url(../images/double-bubble-outline.png);
-    overflow: hidden;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 
     &__div {
         width: 40%;

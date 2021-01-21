@@ -1,4 +1,56 @@
 .about {
-    background: linear-gradient(to top, rgb(193, 181, 239), rgb(229, 226, 233), transparent),
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to top, rgb(193, 181, 239), $secondary-bg-color-1, transparent),
     url(../images/double-bubble-outline.png);
+    padding: 2rem;
+
+    &__div {
+        width: 40%;
+    }
+
+    &__h2 {
+        color: $secondary-color-1;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 0.75rem 0 1rem 0;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6%;
+            background-color: black;
+            height: 2px;
+            width: 13%;
+        }
+    }
+
+    &__p {
+        color: black;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        line-height: 1.5;
+
+        &:nth-child(3) {
+            color: $secondary-color-1;
+        }
+    }
+
+    &__button {
+        color: whitesmoke;
+        background-color: black;
+        margin: 1rem 0;
+        padding: 0.5rem 1.5rem;
+        border-radius: 50px;
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    &__img {
+        width: 35%;
+    }
 }
