@@ -3,7 +3,6 @@
 /* rgb(229, 226, 233) */
 /* rgb(255, 213, 5) */
 /* rgb(106, 27, 208) */
-/* rgb(0, 191, 166) */
 /* Font Properties */
 /* Borders */
 /* Box Shadow */
@@ -28,8 +27,8 @@
 
 .header {
   height: 75vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3))), url(../images/Abstract_Background_02-05.jpg) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../images/Abstract_Background_02-05.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(../images/Abstract_Background_02-05.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(../images/Abstract_Background_02-05.jpg) no-repeat;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -564,6 +563,83 @@
 
 .footer {
   background: #4b55e7;
+  padding: 2rem;
+}
+
+.footer__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__content {
+  width: 40%;
+  text-align: center;
+}
+
+.footer__h2 {
+  color: #ffd505;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+
+.footer__span {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+.footer__p {
+  color: whitesmoke;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.footer__img {
+  width: 18%;
+}
+
+.footer__button {
+  font-size: 1rem;
+  color: #6a1bd0;
+  background-color: #ffd505;
+  margin: 1.5rem 0 0.5rem 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.footer__info {
+  width: 95%;
+  margin: auto;
+}
+
+.footer__hr {
+  border: 1px solid whitesmoke;
+}
+
+.footer__terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__li {
+  display: inline-block;
+  list-style-type: none;
+  color: whitesmoke;
+  font-size: 1rem;
+  margin: 0.5rem 1rem;
 }
 
 /* Universal Styles */
