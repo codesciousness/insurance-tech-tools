@@ -4,7 +4,6 @@
     url(../images/Abstract_Background_02-05.jpg) no-repeat;
     background-size: cover;
     position: relative;
-    overflow: hidden;
 
     &__nav {
         margin: 2rem 3rem;
@@ -90,5 +89,87 @@
         right: 0;
         width: 45%;
         margin: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .header__nav .header__button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+
+        &__nav {
+            float: none;
+            margin: 2rem;
+        }
+
+        &__div {
+            position: unset;
+            transform: unset;
+            width: 100%;
+            margin: 2rem;
+            text-align: center;
+        }
+
+        &__h1 {
+            font-size: 2.5rem;
+            margin: 0.5rem 2rem;
+        }
+
+        &__p {
+            margin: 0.5rem 2rem;
+        }
+
+        &__img {
+            position: unset;
+            transform: unset;
+            width: 60%;
+            margin: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .header__img {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    
+    .header__nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .header {
+
+        &__h1 {
+            font-size: 2rem;
+            margin: 0.5rem 1rem;
+        }
+
+        &__img {
+            margin: 0.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 236px) {
+
+    .header__h1 {
+        font-size: 10vmin;
     }
 }

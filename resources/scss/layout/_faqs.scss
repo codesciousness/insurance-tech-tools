@@ -8,6 +8,7 @@
 
     &__div {
         width: 40%;
+        margin-right: 3rem;
     }
 
     &__h2 {
@@ -59,7 +60,7 @@
     }
 
     &__questions {
-        width: 40%;
+        width: 50%;
     }
 
     &__box {
@@ -133,5 +134,76 @@
         &.-active {
             display: block;
         }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .faqs__questions {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 932px) {
+
+    .faqs {
+        flex-direction: column;
+        justify-content: center;
+        
+        &__div {
+            width: 90%;
+            margin: 2rem;
+            text-align: center;
+        }
+
+        &__img {
+            width: 50%;
+        }
+
+        &__questions {
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width: 682px) {
+
+    .faqs__questions {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+
+    .faqs__img {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 562px) {
+
+    .faqs {
+
+        &__i.fa-plus {
+            display: none;
+        }
+
+        &__i.fa-minus.-active {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .faqs__img {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .faqs__img {
+        width: 100%;
     }
 }

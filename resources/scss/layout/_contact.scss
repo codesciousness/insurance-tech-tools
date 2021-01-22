@@ -9,6 +9,7 @@
 
     &__div {
         width: 40%;
+        max-width: 500px;
     }
 
     &__h2 {
@@ -39,7 +40,7 @@
     &__form {
         display: flex;
         flex-direction: column;
-        width: 500px;
+        width: 100%;
     }
 
     &__input, &__textarea {
@@ -66,5 +67,48 @@
 
     &__img {
         width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .contact__img {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .contact__div {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .contact {
+        flex-direction: column;
+        
+        &__div {
+            width: 90%;
+        }
+
+        &__img {
+            width: 40%;
+        }
+    }
+}
+
+@media only screen and (max-width: 610px) {
+
+    .contact__img {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .contact__img {
+        width: 80%;
     }
 }

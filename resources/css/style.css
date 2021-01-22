@@ -31,7 +31,6 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(../images/Abstract_Background_02-05.jpg) no-repeat;
   background-size: cover;
   position: relative;
-  overflow: hidden;
 }
 
 .header__nav {
@@ -121,6 +120,84 @@
   right: 0;
   width: 45%;
   margin: 3rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .header__nav .header__button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__nav {
+    float: none;
+    margin: 2rem;
+  }
+  .header__div {
+    position: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    width: 100%;
+    margin: 2rem;
+    text-align: center;
+  }
+  .header__h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 2rem;
+  }
+  .header__p {
+    margin: 0.5rem 2rem;
+  }
+  .header__img {
+    position: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    width: 60%;
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header__img {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header__h1 {
+    font-size: 2rem;
+    margin: 0.5rem 1rem;
+  }
+  .header__img {
+    margin: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 236px) {
+  .header__h1 {
+    font-size: 10vmin;
+  }
 }
 
 .plans {
@@ -272,6 +349,19 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 820px) {
+  .plans__div {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .plans__box {
+    width: 90%;
+    height: auto;
+  }
+}
+
 .about {
   min-height: 50vh;
   display: -webkit-box;
@@ -334,6 +424,36 @@
   width: 35%;
 }
 
+@media only screen and (max-width: 1100px) {
+  .about__div {
+    width: 50%;
+  }
+  .about__img {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__div {
+    width: 90%;
+  }
+  .about__img {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .about__img {
+    width: 80%;
+  }
+}
+
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,6 +487,7 @@
 
 .contact__div {
   width: 40%;
+  max-width: 500px;
 }
 
 .contact__h2 {
@@ -402,7 +523,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 500px;
+  width: 100%;
 }
 
 .contact__input, .contact__textarea {
@@ -444,6 +565,45 @@
   width: 25%;
 }
 
+@media only screen and (max-width: 1300px) {
+  .contact__img {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .contact__div {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__div {
+    width: 90%;
+  }
+  .contact__img {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .contact__img {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact__img {
+    width: 80%;
+  }
+}
+
 .faqs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,6 +620,7 @@
 
 .faqs__div {
   width: 40%;
+  margin-right: 3rem;
 }
 
 .faqs__h2 {
@@ -512,7 +673,7 @@
 }
 
 .faqs__questions {
-  width: 40%;
+  width: 50%;
 }
 
 .faqs__box {
@@ -591,6 +752,68 @@
 
 .faqs__i.fa-minus.-active {
   display: block;
+}
+
+@media only screen and (max-width: 1300px) {
+  .faqs__questions {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 932px) {
+  .faqs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .faqs__div {
+    width: 90%;
+    margin: 2rem;
+    text-align: center;
+  }
+  .faqs__img {
+    width: 50%;
+  }
+  .faqs__questions {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 682px) {
+  .faqs__questions {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .faqs__img {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 562px) {
+  .faqs__i.fa-plus {
+    display: none;
+  }
+  .faqs__i.fa-minus.-active {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .faqs__img {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .faqs__img {
+    width: 100%;
+  }
 }
 
 .footer {
@@ -684,6 +907,61 @@
 
 .footer__a:hover {
   color: #ffd505;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+  .footer__content {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .footer__div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__content {
+    width: 90%;
+  }
+  .footer__img:last-child {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .footer__terms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer__li {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .footer__img {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer__img {
+    width: 50%;
+  }
 }
 
 /* Universal Styles */
