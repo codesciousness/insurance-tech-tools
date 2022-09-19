@@ -1,5 +1,5 @@
 .plans {
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -7,7 +7,7 @@
     background: linear-gradient(to top, rgb(193, 181, 239), $secondary-bg-color-1, transparent),
     url(../images/double-bubble-outline.png);
     text-align: center;
-    padding-bottom: 3rem;
+    padding: 0 3rem 3rem 3rem;
 
     &__div {
         width: 40%;
@@ -128,10 +128,21 @@
     }
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 915px) {
+
+    .plans__container {
+        width: 70%;
+    }
+}
+
 @media only screen and (max-width: 820px) {
 
-    .plans__div {
-        width: 60%;
+    .plans {
+        padding: 0 1rem 3rem 1rem;
+
+        &__div {
+            width: 60%;
+        }
     }
 }
 

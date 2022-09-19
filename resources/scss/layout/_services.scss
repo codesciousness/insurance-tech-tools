@@ -1,11 +1,107 @@
 .services {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
     background: url(../images/Abstract_Background-05.jpg) no-repeat;
     background-size: cover;
     padding: 3rem;
 
+    &__div {
+        width: 40%;
+        margin-right: 3rem;
+    }
+
+    &__h2 {
+        color: $main-color;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 1rem 0;
+
+        &::before {
+            content: 'PLANS & SERVICES';
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__span {
+        color: whitesmoke;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    &__p {
+        color: $main-color;
+        font-size: 1rem;
+        margin: 1rem 0;
+
+        &:nth-child(3) {
+            color: whitesmoke;
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+    }
+
+    &__button {
+        font-size: 1rem;
+        color: $secondary-color-1;
+        background-color: $main-color;
+        margin: 1.5rem 0 0.5rem 0;
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
     &__img {
         width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .services {
+
+        &__div {
+            width: 50%;
+        }
+
+        &__img {
+            width: 40%;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .services {
+        flex-direction: column;
+        justify-content: center;
+        
+        &__div {
+            width: 90%;
+            text-align: center;
+            margin: auto;
+        }
+
+        &__img {
+            width: 60%;
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 610px) {
+
+    .services__img {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .services__img {
+        width: 100%;
     }
 }

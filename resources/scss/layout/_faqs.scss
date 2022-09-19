@@ -15,7 +15,7 @@
         color: $main-color;
         font-size: 2rem;
         text-transform: uppercase;
-        margin: 0.5rem 0;
+        margin: 1rem 0;
 
         &::before {
             content: 'FREQUENTLY ASKED QUESTIONS';
@@ -35,7 +35,7 @@
     &__p {
         color: $main-color;
         font-size: 1rem;
-        margin: 0.5rem 0;
+        margin: 1rem 0;
 
         &:nth-child(3) {
             color: whitesmoke;
