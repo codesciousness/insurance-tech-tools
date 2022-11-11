@@ -1,6 +1,6 @@
 # Insurance Tech Tools
 
-Insurance Tech Tools is a project for which I designed a homepage for a fictitious software company that offers technical services for insurance companies.
+Insurance Tech Tools is a project in which I designed a homepage for a fictitious software company that offers technical services for insurance companies. The site has responsive layout changes for all device types and is continously deployed via Netlify at [insurance-tech-tools.netlify.app](https://insurance-tech-tools.netlify.app/).
 
 ## Table of Contents
 
